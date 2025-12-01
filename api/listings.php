@@ -20,7 +20,8 @@ $allowed_origins = [
     'http://localhost',
     'http://127.0.0.1',
     'https://swaphub-frontend.vercel.app',
-    'https://your-vercel-domain.vercel.app'
+    'https://swaphub-frontend-git-main-athanase02s-projects.vercel.app',
+    'https://swaphub-frontend-athanase02s-projects.vercel.app'
 ];
 
 $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
