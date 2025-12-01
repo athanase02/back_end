@@ -1,8 +1,7 @@
 [build]
-builder = "nixpacks"
 
 [deploy]
-startCommand = "php -S 0.0.0.0:$PORT -t ."
+startCommand = "php -S 0.0.0.0:${PORT:-8080}"
 healthcheckPath = "/api/auth.php?action=check_auth"
 healthcheckTimeout = 100
 restartPolicyType = "on_failure"
