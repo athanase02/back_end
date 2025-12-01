@@ -1,2 +1,5 @@
+[build]
+builder = "nixpacks"
+
 [deploy]
-startCommand = "php -S 0.0.0.0:$PORT router.php"
+startCommand = "php -S 0.0.0.0:$PORT -t ."
