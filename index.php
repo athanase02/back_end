@@ -1,2 +1,4 @@
 <?php
-phpinfo();
+// Redirect to router
+require_once 'router.php';
+

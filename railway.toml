@@ -1,2 +1,2 @@
 [deploy]
-startCommand = "sh start.sh"
+startCommand = "php -S 0.0.0.0:$PORT router.php"
