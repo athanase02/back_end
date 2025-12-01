@@ -26,5 +26,5 @@ php -m | grep -E "(mysqli|json|mbstring)" || echo "Extensions check failed"
 
 echo ""
 echo "=== Starting PHP Development Server ==="
-echo "Command: php -S 0.0.0.0:$PORT -t ."
-php -S 0.0.0.0:$PORT -t .
+echo "Command: php -S 0.0.0.0:$PORT -t public"
+php -S 0.0.0.0:$PORT -t public
