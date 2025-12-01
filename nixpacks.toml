@@ -1,7 +1,8 @@
 [phases.setup]
-nixPkgs = ['php82', 'php82Extensions.mysqli', 'php82Extensions.mbstring', 'php82Extensions.json']
+nixPkgs = ['php83', 'php83Extensions.mysqli', 'php83Extensions.mbstring']
 
-[phases.build]
+[phases.install]
+cmds = ['composer install --ignore-platform-reqs --no-dev --optimize-autoloader']
 
 [phases.start]
-cmd = "php -S 0.0.0.0:$PORT router.php"
+cmd = "bash start.sh"
